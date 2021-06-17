@@ -1,0 +1,19 @@
+<svg width="256" height="256" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+	.st0{
+		fill:#6DA9DC;
+		stroke:#000000;
+		stroke-width:5;
+		stroke-linecap:round;
+		stroke-linejoin:round;
+		stroke-miterlimit:10;
+		}
+	@media (prefers-color-scheme: dark) {
+      .st0 { stroke: #ffffff; }
+    }	
+</style>
+<g>
+	<path class="st0" d="M37.48,175.92V80.08H23.2V46.92h74.79L128,136.23l30.01-89.31h74.79v33.16h-14.28v95.85h14.28v33.16h-67.53
+		v-33.16h12.58V85.16L143.97,187.3h-31.95L78.14,85.16v90.76h12.59v33.16H23.2v-33.16H37.48z"/>
+</g>
+</svg>
