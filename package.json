@@ -1,0 +1,26 @@
+{
+  "name": "miss-lavonnes",
+  "version": "1.0.0",
+  "description": "new site for miss lavonne's",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsahlsa/Miss-Lavonnes.git"
+  },
+  "author": "jsahlsa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsahlsa/Miss-Lavonnes/issues"
+  },
+  "homepage": "https://github.com/jsahlsa/Miss-Lavonnes#readme",
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "parcel-bundler": "^1.12.5",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.3.1"
+  }
+}
