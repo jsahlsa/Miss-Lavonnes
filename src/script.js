@@ -25,7 +25,6 @@ const radioStyles = document.querySelectorAll(".style-buttons");
 const random = (min, max) => Math.random() * (max - min) + min;
 
 function missEntry() {
-    console.log(this);
     this.style.transform = `rotate(${random(
         random(-95, -25),
         random(25, 95)
@@ -39,7 +38,6 @@ function randomColor(colors) {
         return randomColor(colors);
     }
     lastColor = currentColor;
-    console.log(currentColor);
     return currentColor;
 }
 
