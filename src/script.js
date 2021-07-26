@@ -1,8 +1,4 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
 
-// prints a message in the browser's dev tools console
-console.log("Hello 🌎");
 
 const headDiv = document.querySelector(".content");
 const miss = document.querySelectorAll(".head");
@@ -24,11 +20,12 @@ const radioStyles = document.querySelectorAll(".style-buttons");
 
 const random = (min, max) => Math.random() * (max - min) + min;
 
-function missEntry() {
+function missEntry(e) {
     this.style.transform = `rotate(${random(
         random(-95, -25),
         random(25, 95)
     )}deg)`;
+    e.preventDefault();
 }
 
 function randomColor(colors) {
@@ -41,8 +38,9 @@ function randomColor(colors) {
     return currentColor;
 }
 
-function missLeave() {
+function missLeave(e) {
     this.style.transform = `rotate(${random(random(-10, -5), random(5, 10))}deg)`;
+    e.preventDefault();
 }
 
 function radioStyleChange() {

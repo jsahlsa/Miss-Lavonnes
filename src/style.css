@@ -1,3 +1,22 @@
+/* Import fonts */
+@font-face {
+  font-family: clab_personal_usebold;
+ src: url('fonts/clab_personal_use-bold-webfont.woff') format('woff');
+  src: url('fonts/clab_personal_use-bold-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: clab_personal_useregular;
+  src: url('fonts/clab_personal_use-regular-webfont.woff2') format('woff2'),
+       url('fonts/clab_personal_use-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 /* Our default values set as CSS variables */
 :root {
@@ -14,19 +33,12 @@
   --font-body: 'clab_personal_useregular';
 }
 
-/* test for layout */
-/*
-* {
-  border: red dashed 1px;
-}
-*/
+
 /* Basic page style resets */
 * {
   box-sizing: border-box;
 }
-[hidden] {
-  display: none !important;
-}
+
 
 html, body, .page-wrapper {
   margin: 0;
@@ -35,23 +47,6 @@ html, body, .page-wrapper {
 
 html {
   font-family: var(--font-head);
-}
-/* Import fonts */
-@font-face {
-    font-family: clab_personal_usebold;
-   src: url('fonts/clab_personal_use-bold-webfont.woff') format('woff');
-    src: url('fonts/clab_personal_use-bold-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: clab_personal_useregular;
-    src: url('fonts/clab_personal_use-regular-webfont.woff2') format('woff2'),
-         url('fonts/clab_personal_use-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
 }
 
 
@@ -213,25 +208,25 @@ body {
 
 .content .head-lavonnes span:nth-child(6) {
   color: var(--yellow);
-    transform: rotate(8deg);
+  transform: rotate(8deg);
 
 }
 
 .content .head-lavonnes span:nth-child(7) {
   color: var(--green);
-    transform: rotate(3deg);
+  transform: rotate(3deg);
 
 }
 
 .content .head-lavonnes span:nth-child(8) {
   color: var(--red);
-    transform: rotate(-3deg);
+  transform: rotate(-3deg);
   padding: 0;
 }
 
 .content .head-lavonnes span:nth-child(9) {
   color: var(--blue);
-    transform: rotate(-7deg);
+  transform: rotate(-7deg);
 
 }
 
