@@ -38,11 +38,12 @@ body {
   font-family: var(--font-head);
   display: grid;
   justify-content: center;
-  align-content: center;
-  background: radial-gradient(var(--bg-light), var(--trans-yellow));
+  background: center / cover no-repeat
+    radial-gradient(var(--bg-light), var(--trans-yellow));
   transition: background-color 1s ease-in;
   perspective: 1000;
   backface-visibility: hidden;
+  height: 100vh;
 }
 
 /* Page structure */
@@ -285,7 +286,7 @@ i {
 }
 
 .book-icon {
-  opacity: 0.1;
+  opacity: 0;
   font-size: 5rem;
   animation: rotatebook 7s infinite alternate cubic-bezier(1, -2, 0.8, 1.1);
   position: absolute;
@@ -298,7 +299,7 @@ i {
 
 .school-icon {
   font-size: 3.5rem;
-  opacity: 0.1;
+  opacity: 0;
   animation: rotateschool 10s infinite alternate cubic-bezier(0.7, -2, 0.8, 1.1);
   position: absolute;
   top: 80%;
@@ -309,7 +310,7 @@ i {
 
 .child-icon {
   font-size: 4rem;
-  opacity: 0.1;
+  opacity: 0;
   animation: move 5s infinite alternate cubic-bezier(1, -2, 0.8, 1.1);
   position: absolute;
   top: 40%;
@@ -447,4 +448,5 @@ html {
   font-family: var(--font-head);
   visibility: visible;
   opacity: 1;
+  height: 100vh;
 }
