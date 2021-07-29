@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: clab_personal_usebold;
   src: url('fonts/clab_personal_use-bold-webfont.woff') format('woff');
@@ -33,17 +32,6 @@
 /* Basic page style resets */
 * {
   box-sizing: border-box;
-}
-
-html,
-body,
-.page-wrapper {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-family: var(--font-head);
 }
 
 body {
@@ -431,4 +419,17 @@ button:active {
     transform: scale(1.05) rotate(10deg);
     background: var(--blue-hover);
   }
+}
+
+html,
+body,
+.page-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-head);
+  visibility: visible;
+  opacity: 1;
 }
