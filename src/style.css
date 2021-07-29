@@ -53,9 +53,13 @@ body {
 
 .wrapper {
   display: grid;
-  justify-content: center;
+  /* justify-content: center;
   align-content: center;
-  height: 100vh;
+  height: 100vh; */
+}
+
+nav {
+  margin-bottom: 6em;
 }
 
 .content {
@@ -336,6 +340,8 @@ button[type='submit'] {
 }
 
 button:active {
+  perspective: 1000;
+  backface-visibility: hidden;
   top: 5px;
 }
 
@@ -374,11 +380,21 @@ button:active {
 }
 /* tablet portrait up */
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    /* height: 100vh; */
+  }
+
+  nav {
+    margin-bottom: 10em;
+  }
+
   .content h1 span {
     -webkit-text-stroke: 4px var(--black);
-      text-shadow: 4px 4px 5px var(--black);
-
+    text-shadow: 4px 4px 5px var(--black);
   }
 
   .content .head-miss span {
