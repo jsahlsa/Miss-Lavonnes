@@ -1,7 +1,8 @@
-/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
 @font-face {
   font-family: clab_personal_usebold;
- src: url('fonts/clab_personal_use-bold-webfont.woff') format('woff');
+  src: url('fonts/clab_personal_use-bold-webfont.woff') format('woff');
   src: url('fonts/clab_personal_use-bold-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
@@ -10,20 +11,17 @@
 @font-face {
   font-family: clab_personal_useregular;
   src: url('fonts/clab_personal_use-regular-webfont.woff2') format('woff2'),
-       url('fonts/clab_personal_use-regular-webfont.woff') format('woff');
+    url('fonts/clab_personal_use-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 /* Our default values set as CSS variables */
 :root {
   --yellow: hsla(53, 98%, 65%, 1);
   --trans-yellow: hsla(53, 98%, 65%, 0.1);
   --blue: hsla(209, 85%, 67%, 1);
-  --blue-hover: hsla(209, 85%, 67%, .7);
+  --blue-hover: hsla(209, 85%, 67%, 0.7);
   --black: hsla(36, 5%, 19%, 1);
   --trans-black: hsla(36, 5%, 19%, 0.75);
   --green: hsla(145, 71%, 47%, 1);
@@ -33,14 +31,14 @@
   --font-body: 'clab_personal_useregular';
 }
 
-
 /* Basic page style resets */
 * {
   box-sizing: border-box;
 }
 
-
-html, body, .page-wrapper {
+html,
+body,
+.page-wrapper {
   margin: 0;
   padding: 0;
 }
@@ -49,27 +47,21 @@ html {
   font-family: var(--font-head);
 }
 
-
-
-
-
-
 body {
   font-family: var(--font-head);
   display: grid;
   justify-content: center;
-  align-content: center; 
+  align-content: center;
   background: radial-gradient(var(--bg-light), var(--trans-yellow));
 
- transition: all 1s ease-in;
-
+  transition: background-color 1s ease-in;
 }
 
 /* Page structure */
 
 .page-wrapper {
   min-width: 100%;
-  }
+}
 
 .wrapper {
   display: grid;
@@ -85,7 +77,6 @@ body {
   align-content: center;
   justify-content: center;
   margin-bottom: 5rem;
-
 }
 
 .content h1 {
@@ -99,22 +90,15 @@ body {
   font-family: var(--font-head);
   height: 2.5rem;
   color: var(--black);
-  
-  text-shadow: 2px 2px 0 var(--black),
-    -2px 2px 0 var(--black),
-    2px -2px 0 var(--black),
-    -2px -2px 0 var(--black),
-    2px 2px 5px var(--black);
- 
-  
-  
+
+  text-shadow: 2px 2px 0 var(--black), -2px 2px 0 var(--black),
+    2px -2px 0 var(--black), -2px -2px 0 var(--black), 2px 2px 5px var(--black);
 }
 
 .content .head-miss span {
   font-size: 6.5rem;
   padding: 0 0.3rem;
   height: 6rem;
-  
 }
 
 .content .head-lavonnes span {
@@ -125,24 +109,21 @@ body {
 
 .content .head-childcare span {
   font-family: 'Pangolin', cursive;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   text-transform: uppercase;
   font-size: 2rem;
   color: var(--black);
-  text-shadow: 0.2px 0.2px 0 var(--black),
-    -0.2px 0.2px 0 var(--black),
-    0.2px -0.2px 0 var(--black),
-    -0.2px -0.2px 0 var(--black);
+  text-shadow: 0.2px 0.2px 0 var(--black), -0.2px 0.2px 0 var(--black),
+    0.2px -0.2px 0 var(--black), -0.2px -0.2px 0 var(--black);
 }
 
-
-
-.content .head-lavonnes span, .content .head-childcare span {
-  transition: all .4s cubic-bezier(.96,.09,.36,1.88);
+.content .head-lavonnes span,
+.content .head-childcare span {
+  transition: all 0.4s cubic-bezier(0.96, 0.09, 0.36, 1.88);
 }
 
 .content .head-miss span {
-  transition: all .4s cubic-bezier(.96,.09,.36,1.88);
+  transition: all 0.4s cubic-bezier(0.96, 0.09, 0.36, 1.88);
 }
 
 /* style 'Miss' letters */
@@ -150,25 +131,21 @@ body {
 .content .head-miss span:nth-child(1) {
   color: var(--blue);
   transform: rotate(-5deg);
-  
 }
 
 .content .head-miss span:nth-child(2) {
   color: var(--red);
-    transform: rotate(6deg);
-
+  transform: rotate(6deg);
 }
 
 .content .head-miss span:nth-child(3) {
   color: var(--yellow);
-    transform: rotate(5deg);
-
+  transform: rotate(5deg);
 }
 
 .content .head-miss span:nth-child(4) {
   color: var(--green);
-    transform: rotate(-7deg);
-
+  transform: rotate(-7deg);
 }
 
 /* style 'Lavonne' letters */
@@ -178,44 +155,37 @@ body {
   height: 4rem;
   line-height: 3rem;
   color: var(--yellow);
-    transform: rotate(-10deg);
-
+  transform: rotate(-10deg);
 }
 
 .content .head-lavonnes span:nth-child(2) {
   color: var(--red);
-    transform: rotate(3deg);
-
+  transform: rotate(3deg);
 }
 
 .content .head-lavonnes span:nth-child(3) {
   color: var(--green);
-    transform: rotate(-4deg);
-
+  transform: rotate(-4deg);
 }
 
 .content .head-lavonnes span:nth-child(4) {
   color: var(--blue);
-    transform: rotate(5deg);
-
+  transform: rotate(5deg);
 }
 
 .content .head-lavonnes span:nth-child(5) {
   color: var(--red);
-    transform: rotate(-7deg);
-
+  transform: rotate(-7deg);
 }
 
 .content .head-lavonnes span:nth-child(6) {
   color: var(--yellow);
   transform: rotate(8deg);
-
 }
 
 .content .head-lavonnes span:nth-child(7) {
   color: var(--green);
   transform: rotate(3deg);
-
 }
 
 .content .head-lavonnes span:nth-child(8) {
@@ -227,21 +197,14 @@ body {
 .content .head-lavonnes span:nth-child(9) {
   color: var(--blue);
   transform: rotate(-7deg);
-
 }
 
-
-
-
-
 /* radio button styling */
-
 
 fieldset {
   border: none;
   display: flex;
   margin: 1rem;
-  
 }
 
 input {
@@ -256,33 +219,27 @@ input {
   margin-right: 1rem;
   background: white;
   box-shadow: 1px 1px 1px var(--black);
-  transition: all .4s ease-in;
+  transition: all 0.4s ease-in;
 }
-
-
-
-
 
 input:not(:checked) {
   cursor: pointer;
 }
 
-input[type="radio"]::before {
+input[type='radio']::before {
   display: block;
-  content: " ";
+  content: ' ';
   width: 18px;
   height: 18px;
   border-radius: 10px;
   font-size: 1.2em;
   transform: translate(2px, 1px) scale(1);
   transform-origin: center;
-  transition: all .4s ease-in;
-  
+  transition: all 0.4s ease-in;
 }
 
 .red-button input::before {
   background-color: var(--red);
-  
 }
 
 .blue-button input::before {
@@ -293,26 +250,26 @@ input[type="radio"]::before {
   background-color: var(--yellow);
 }
 
-input[type="radio"]:checked::before {
+input[type='radio']:checked::before {
   transform: translate(16px, 1px) scale(1);
   background-color: var(--black);
   opacity: 0.2;
-  transition: all .4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .yellow-button input:checked {
   background: var(--yellow);
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .blue-button input:checked {
   background: var(--blue);
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .red-button input:checked {
   background: var(--red);
-  opacity: .2;
+  opacity: 0.2;
 }
 
 /* icons */
@@ -324,23 +281,22 @@ i {
   overflow: hidden;
 }
 
-
 .book-icon {
-  opacity: .1;
+  opacity: 0.1;
   font-size: 5rem;
-  animation: rotatebook 7s infinite alternate cubic-bezier(1,-2,0.8,1.1);
+  animation: rotatebook 7s infinite alternate cubic-bezier(1, -2, 0.8, 1.1);
   position: absolute;
-    color: var(--red);
+  color: var(--red);
   top: 20%;
   left: 15%;
 
   transform: rotate(40deg);
-  }
+}
 
 .school-icon {
   font-size: 3.5rem;
   opacity: 0.1;
-  animation: rotateschool 10s infinite alternate cubic-bezier(0.7,-2,0.8,1.1);
+  animation: rotateschool 10s infinite alternate cubic-bezier(0.7, -2, 0.8, 1.1);
   position: absolute;
   top: 80%;
   left: 60%;
@@ -351,7 +307,7 @@ i {
 .child-icon {
   font-size: 4rem;
   opacity: 0.1;
-  animation: move 5s infinite alternate cubic-bezier(1,-2,0.8,1.1);
+  animation: move 5s infinite alternate cubic-bezier(1, -2, 0.8, 1.1);
   position: absolute;
   top: 40%;
   left: 55%;
@@ -365,16 +321,16 @@ button {
   position: relative;
   padding: 0.5em 2em;
   border-radius: 5px;
-  margin-top: 2em; 
+  margin-top: 2em;
   background: var(--blue);
-  cursor: pointer; 
+  cursor: pointer;
   border: 2px var(--black) solid;
   transform: skew(10deg) rotate(2deg);
   transition: all 0.3s ease-in;
   box-shadow: 3px 3px 5px var(--black);
 }
 
-button[type="submit"] {
+button[type='submit'] {
   margin: 0 2em;
 }
 
@@ -387,12 +343,12 @@ button:active {
   top: 5px;
 }
 
-
 @keyframes rotatebook {
   from {
     transform: rotate(0deg);
     left: 10%;
-  } to {
+  }
+  to {
     transform: rotate(360deg);
     top: 20%;
   }
@@ -402,7 +358,8 @@ button:active {
   from {
     transform: rotate(0deg);
     left: 40%;
-  } to {
+  }
+  to {
     transform: rotate(360deg);
     top: 60%;
   }
@@ -412,61 +369,52 @@ button:active {
   from {
     left: 60%;
     top: 30%;
-  } to {
+  }
+  to {
     left: 50%;
-    
+
     transform: scale(1.2);
   }
 }
 /* tablet portrait up */
 
 @media (min-width: 600px) {
-  
   .content h1 span {
-    text-shadow: 4px 4px 0 var(--black),
-    -4px 4px 0 var(--black),
-    4px -4px 0 var(--black),
-    -4px -4px 0 var(--black),
-    4px 4px 10px var(--black);
- 
+    text-shadow: 4px 4px 0 var(--black), -4px 4px 0 var(--black),
+      4px -4px 0 var(--black), -4px -4px 0 var(--black),
+      4px 4px 10px var(--black);
   }
-  
+
   .content .head-miss span {
-  font-size: 9rem;
-  padding: 0 0.3rem;
-  height: 8rem;
-}
+    font-size: 9rem;
+    padding: 0 0.3rem;
+    height: 8rem;
+  }
 
-.content .head-lavonnes span {
-  font-size: 5rem;
-  padding: 0 0.2rem;
-  height: 5rem;
-}
-  
+  .content .head-lavonnes span {
+    font-size: 5rem;
+    padding: 0 0.2rem;
+    height: 5rem;
+  }
+
   .content .head-lavonnes span:nth-child(1) {
-  font-size: 9rem;
-  height: 5rem;
-  line-height: 5rem;
-  color: var(--yellow);
+    font-size: 9rem;
+    height: 5rem;
+    line-height: 5rem;
+    color: var(--yellow);
     transform: rotate(-10deg);
+  }
 
-}
+  .content .head-childcare span {
+    padding: 0 0.5rem;
+    font-size: 3rem;
+  }
 
-.content .head-childcare span {
- 
-  padding: 0 .5rem;
-  font-size: 3rem;
-  
-}
-  
   .content {
     margin-bottom: 10rem;
   }
-  
+
   .color-button {
     left: 64%;
   }
-
 }
-
-
