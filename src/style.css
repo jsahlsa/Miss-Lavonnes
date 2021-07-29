@@ -78,7 +78,7 @@ body {
   font-family: var(--font-head);
   height: 2.5rem;
   color: var(--black);
-
+  text-shadow: 4px 4px 5px var(--black);
   -webkit-text-stroke: 2px var(--black);
 }
 
@@ -101,6 +101,7 @@ body {
   font-size: 2rem;
   color: var(--black);
   -webkit-text-stroke: 1px var(--black);
+  text-shadow: 2px 2px 2px var(--black);
 }
 
 .content .head-lavonnes span,
@@ -376,6 +377,8 @@ button:active {
 @media (min-width: 600px) {
   .content h1 span {
     -webkit-text-stroke: 4px var(--black);
+      text-shadow: 4px 4px 5px var(--black);
+
   }
 
   .content .head-miss span {
