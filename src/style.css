@@ -39,7 +39,7 @@ body {
   display: grid;
   justify-content: center;
   background: center / cover no-repeat
-    radial-gradient(var(--bg-light), var(--trans-yellow));
+    radial-gradient(var(--bg-light), var(--trans-yellow)) fixed;
   transition: background-color 1s ease-in;
   perspective: 1000;
   backface-visibility: hidden;
