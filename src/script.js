@@ -86,7 +86,7 @@ radioStyles.forEach((button) =>
 animateBtn.addEventListener('click', function (e) {
   if (!animationToggle) {
     e.preventDefault();
-    icons.forEach((icon) => (icon.style.opacity = '0.5'));
+    icons.forEach((icon) => (icon.style.opacity = '0.2'));
     animationToggle = !animationToggle;
     console.log(animationToggle);
   } else {
