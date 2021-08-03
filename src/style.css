@@ -1,7 +1,7 @@
 @font-face {
   font-family: clab_personal_usebold;
-  src: url('fonts/clab_personal_use-bold-webfont.woff') format('woff');
-  src: url('fonts/clab_personal_use-bold-webfont.woff2') format('woff2');
+  src: url('fonts/clab_personal_use-bold-webfont.woff') format('woff'),
+    url('fonts/clab_personal_use-bold-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -44,6 +44,7 @@ body {
   perspective: 1000;
   backface-visibility: hidden;
   height: 100vh;
+  overflow: hidden;
 }
 
 /* Page structure */
